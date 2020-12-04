@@ -1,0 +1,210 @@
+// 全站預設
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+body {
+    // font-size: $font-size-base;
+    line-height: 1.5;
+    font-family: 'Roboto', 'Lato', sans-serif;
+    ;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+a,
+a:hover {
+    text-decoration: none;
+}
+
+// start css
+.navbar {
+    background: $primary;
+    min-width: 296px;
+    height: 100vh;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: start;
+}
+
+.navList {
+    h1 {
+        margin-bottom: $spacer*2;
+    }
+
+    .listLink {
+        font-weight: bold;
+        margin-bottom: $spacer*1.75;
+        span {
+            margin-right: 32px;
+            vertical-align:text-top;
+        }
+        a{
+            display: block;
+            color: $secondary; 
+            padding: 2px 0 2px 32px;
+        }
+        a:hover{
+            color: $primary-dark;
+            border-left: 4px solid $primary-dark;
+        }
+        li{
+            padding-left: 32px;
+        }
+        .active{
+            color: $primary-dark;
+            border-left: 4px solid $primary-dark;
+
+        }
+    }
+
+    // .active{
+    //     color: $primary-dark;
+    //         border-left: 4px solid $primary-dark;
+    // }
+}
+
+
+.nameCard {
+    display: flex;
+    align-items: start;
+
+    .nameCard-name {
+        font-weight: bold;
+    }
+
+    .nameCard-email {
+        font-size: $h5-font-size;
+    }
+
+    .nameCard-time {
+        font-size: $h6-font-size;
+    }
+}
+
+.circleImg {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    align-items: center;
+}
+
+//左區塊
+.main {
+    margin-left: 296px;
+    height: 100vh;
+}
+
+//最上方主title
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.mainTitle {
+    align-items: center;
+}
+.mainTitle-Title {
+    font-weight: bold;
+    font-size: $h2-font-size;
+}
+
+.mainTitle-list>.btn-secondary {
+    color: $secondary;
+    border-color: $white;
+    background-color: $white;
+}
+
+.tipIcon {
+    a {
+        color: $secondary;
+    }
+
+    a:hover {
+        color: $primary-dark;
+    }
+}
+
+//次title
+.secondaryBar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+//Assignment
+// .boxList {}
+
+// .boxLisItem {}
+
+.boxListItemLine {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .boxListItemLine-Text {
+        font-size: $h6-font-size;
+    }
+
+    .boxListItemLine-Point {
+        font-size: $h4-font-size;
+        font-weight: bold;
+        color: $secondary;
+    }
+}
+
+// bs 樣式改寫
+.list-group-item.active,
+.card-header:first-child {
+    background-color: $primary;
+    border-color: $primary-dark2;
+}
+
+.list-group-item:first-child {
+    border-top-left-radius: .1rem;
+    border-top-right-radius: .1rem;
+}
+
+.list-group-item:last-child {
+    border-bottom-right-radius: .1rem;
+    border-bottom-left-radius: .1rem;
+}
+
+.card {
+    border-radius: .1rem;
+    border: 1px solid $primary-dark2;
+}
+hr{
+    border-top: 1px solid $primary-dark2;
+}
+
+//卡片區
+.cardHeader {
+    display: flex;
+    align-items: center;
+}
+
+.WrapDflexBetween {
+    display: flex;
+    justify-content: space-between;
+
+    a {
+        color: $secondary;
+    }
+
+    a:hover {
+        color: $primary-dark2;
+    }
+}
+
+

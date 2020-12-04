@@ -1,0 +1,460 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.no-gutters {
+  margin-right: 0;
+  margin-left: 0;
+  padding-right: 0;
+  padding-left: 0;
+}
+
+.font-size-sm {
+  font-size: 0.75rem;
+}
+
+.font-size-md {
+  font-size: 0.875rem;
+}
+
+.font-size-title {
+  font-size: 1rem;
+}
+
+.fontWeightBold {
+  font-weight: bold;
+}
+
+.h3font {
+  font-size: 1.25rem;
+}
+
+.colorGary {
+  color: #666;
+}
+
+.colorPrimaryDark {
+  color: #2A8356;
+}
+
+.colorPrimaryDark2 {
+  color: #CDDDCD;
+}
+
+.colorSecondary {
+  color: #121212;
+}
+
+.bgPrimaryPoint {
+  background-color: #EDF4EE;
+  color: #2A8356;
+}
+
+.colorWaring {
+  color: #E3006E;
+}
+
+.commonA {
+  display: block;
+  color: #121212;
+}
+
+.commonA:hover {
+  color: #2A8356;
+}
+
+.d-inline {
+  display: inline;
+}
+
+.hrStyle {
+  border-top: 1px solid #CDDDCD;
+  margin: 24px 0;
+}
+
+.btn {
+  border-radius: .1rem;
+}
+
+.btnPrimary {
+  color: #fff;
+  background-color: #2A8356;
+}
+
+.btnSecondary {
+  color: #121212;
+  background-color: #EDF4EE;
+  border-color: #CDDDCD;
+}
+
+.btnThird {
+  color: #2A8356;
+  border-color: #CDDDCD;
+}
+
+.btnOutlinePrimary {
+  color: #2A8356;
+  border-color: #2A8356;
+}
+
+.widthFull {
+  width: 100%;
+}
+
+.p-8 {
+  padding: 2rem;
+}
+
+.mt-4 {
+  margin-top: 16px;
+}
+
+.mt-8 {
+  margin-top: 2rem;
+}
+
+.m-y-4 {
+  margin: 16px 0;
+}
+
+.mt-9 {
+  margin-top: 2.75rem;
+}
+
+.mt-10 {
+  margin-top: 3rem;
+}
+
+.ml-6 {
+  margin-left: 1.5rem;
+}
+
+.mr-2 {
+  margin-right: 8px;
+}
+
+.mr-9 {
+  margin-right: 3rem;
+}
+
+.mb-7 {
+  margin-bottom: 1.75rem;
+}
+
+.mr-8 {
+  margin-right: 2rem;
+}
+
+.mb-8 {
+  margin-bottom: 2rem;
+}
+
+.pt-8 {
+  padding-top: 2rem;
+}
+
+.pl-8 {
+  padding-left: 2rem;
+}
+
+.pb-8 {
+  padding-bottom: 32px;
+}
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  line-height: 1.5;
+  font-family: 'Roboto', 'Lato', sans-serif;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+a,
+a:hover {
+  text-decoration: none;
+}
+
+.navbar {
+  background: #EDF4EE;
+  min-width: 296px;
+  height: 100vh;
+  position: fixed;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+}
+
+.navList h1 {
+  margin-bottom: 2rem;
+}
+
+.navList .listLink {
+  font-weight: bold;
+  margin-bottom: 1.75rem;
+}
+
+.navList .listLink span {
+  margin-right: 32px;
+  vertical-align: text-top;
+}
+
+.navList .listLink a {
+  display: block;
+  color: #121212;
+  padding: 2px 0 2px 32px;
+}
+
+.navList .listLink a:hover {
+  color: #2A8356;
+  border-left: 4px solid #2A8356;
+}
+
+.navList .listLink li {
+  padding-left: 32px;
+}
+
+.navList .listLink .active {
+  color: #2A8356;
+  border-left: 4px solid #2A8356;
+}
+
+.nameCard {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+}
+
+.nameCard .nameCard-name {
+  font-weight: bold;
+}
+
+.nameCard .nameCard-email {
+  font-size: 0.875rem;
+}
+
+.nameCard .nameCard-time {
+  font-size: 0.75rem;
+}
+
+.circleImg {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main {
+  margin-left: 296px;
+  height: 100vh;
+}
+
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.mainTitle {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.mainTitle-Title {
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.mainTitle-list > .btn-secondary {
+  color: #121212;
+  border-color: #fff;
+  background-color: #fff;
+}
+
+.tipIcon a {
+  color: #121212;
+}
+
+.tipIcon a:hover {
+  color: #2A8356;
+}
+
+.secondaryBar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.boxListItemLine {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.boxListItemLine .boxListItemLine-Text {
+  font-size: 0.75rem;
+}
+
+.boxListItemLine .boxListItemLine-Point {
+  font-size: 1rem;
+  font-weight: bold;
+  color: #121212;
+}
+
+.list-group-item.active,
+.card-header:first-child {
+  background-color: #EDF4EE;
+  border-color: #CDDDCD;
+}
+
+.list-group-item:first-child {
+  border-top-left-radius: .1rem;
+  border-top-right-radius: .1rem;
+}
+
+.list-group-item:last-child {
+  border-bottom-right-radius: .1rem;
+  border-bottom-left-radius: .1rem;
+}
+
+.card {
+  border-radius: .1rem;
+  border: 1px solid #CDDDCD;
+}
+
+hr {
+  border-top: 1px solid #CDDDCD;
+}
+
+.cardHeader {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.WrapDflexBetween {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.WrapDflexBetween a {
+  color: #121212;
+}
+
+.WrapDflexBetween a:hover {
+  color: #CDDDCD;
+}
+
+.modal-content {
+  border-radius: .1rem;
+}
+
+.modal-header {
+  border-bottom: 1px solid #fff;
+}
+
+.form-control {
+  border-radius: .1rem;
+  border: 1px solid #121212;
+}
+/*# sourceMappingURL=all.css.map */

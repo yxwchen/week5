@@ -1,0 +1,165 @@
+.no-gutters {
+    margin-right: 0;
+    margin-left: 0;
+
+    padding-right: 0;
+    padding-left: 0;
+}
+
+
+//fz
+.font-size-sm {
+    font-size: $h6-font-size; //字體12
+}
+.font-size-md {
+    font-size: $h5-font-size; //字體14
+}
+
+
+
+.font-size-title {
+    font-size: $h4-font-size; //字體16
+}
+
+.fontWeightBold {
+    font-weight: bold;
+}
+
+.h3font{
+    font-size:$h3-font-size;//字體20
+}
+
+//color
+.colorGary {
+    color: $gary;
+}
+
+.colorPrimaryDark {
+    color: $primary-dark;
+}
+.colorPrimaryDark2 {
+    color: $primary-dark2;
+}
+
+.colorSecondary {
+    color: $secondary;
+}
+
+.bgPrimaryPoint {
+    background-color: $primary;
+    color: $primary-dark;
+}
+.colorWaring{
+    color: $warning;
+}
+
+//通用a
+.commonA {
+    display: block;
+    color: $secondary;
+}
+.commonA:hover {
+    color: $primary-dark;
+}
+.d-inline{
+    display: inline;
+}
+//通用hr
+.hrStyle{
+    border-top: 1px solid $primary-dark2;
+    margin: 24px 0;
+}
+//改寫bs+通用btn
+.btn{
+    border-radius: .1rem;
+}
+.btnPrimary{
+   color: $white;
+   background-color:$primary-dark;
+}
+.btnSecondary{
+    color: $secondary;
+    background-color: $primary;
+    border-color: $primary-dark2;
+}
+.btnThird{
+    color: $primary-dark;
+    border-color: $primary-dark2;
+}
+.btnOutlinePrimary{
+    color: $primary-dark;
+    border-color: $primary-dark;
+}
+
+//寬度
+.widthFull{
+width: 100%;
+}
+
+// 間距系統 基數為四
+.p-8 {
+    //padding: 32px;
+    padding: $spacer*2;
+    ;
+}
+
+.mt-4 {
+    margin-top: 16px;
+}
+
+.mt-8 {
+    // margin-top: 32px;
+    margin-top: $spacer*2;
+}
+.m-y-4{
+    margin: 16px 0;
+}
+.mt-9 {
+    // margin-top: 44px;
+    margin-top: $spacer*2.75;
+}
+.mt-10{
+     // margin-top: 48px;
+     margin-top: $spacer*3;
+}
+.ml-6 {
+    margin-left: $spacer*1.5;
+}
+
+.mr-2 {
+    margin-right: 8px;
+}
+
+.mr-9 {
+    // 48px;
+    margin-right: $spacer*3;
+}
+
+.mb-7 {
+    // margin-bottom: 28px;
+    margin-bottom: $spacer*1.75;
+}
+
+.mr-8 {
+    // margin-right: 32px;
+    margin-right: $spacer*2;
+}
+
+.mb-8 {
+    // margin-bottom: 32px;
+    margin-bottom: $spacer*2;
+}
+
+.pt-8 {
+    // padding-top: 32px;
+    padding-top: $spacer*2;
+}
+
+.pl-8 {
+    // padding-left: 32px;
+    padding-left: $spacer*2;
+}
+
+.pb-8 {
+    padding-bottom: 32px;
+}

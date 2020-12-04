@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Answer Admin</title>
+    <!-- bs css cdn -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+        integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <!-- icon cdn -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <!-- 自己的css -->
+    <link rel="stylesheet" href="./scss/all.css">
+</head>
+
+<body>
+    <div class="container-fluid no-gutters">
+        <!-- 主導覽 -->
+        <nav class="navbar no-gutters">
+            <ul class="navList">
+                <h1 class="mb-8 pt-8 pl-8"><a href="index.html"><img
+                            src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/085a62fb22df4bf21c605a180648c6c6e35c2b32/week5/logo-ANSWER.svg"
+                            alt=""></a></h1>
+                <li class="listLink"><a href="#" class="">
+                        <!--  mb-2 pl-5 py-2-->
+                        <span class="material-icons">
+                            insert_chart
+                        </span>
+                        <span>Dashboard</span>
+                    </a></li>
+                <li class="listLink"><a href="#"><span class="material-icons">
+                            forum
+                        </span>
+                        <span>Question</span>
+                    </a></li>
+                <li class="listLink">
+                    <a href="assigment.html" class="actvie"><span class="material-icons">
+                            assignment
+                        </span>
+                        <span>Assignment</span>
+                    </a></li>
+                <li class="listLink"><a href="#"><span class="material-icons">
+                            video_library
+                        </span>
+                        <span>Course</span>
+                    </a></li>
+                <li class="listLink"><a href="admin.html"><span class="material-icons">
+                            supervisor_account
+                        </span>
+                        <span>Admin</span>
+                    </a></li>
+                <li class="listLink"><a href="#"><span class="material-icons">
+                            settings
+                        </span>
+                        <span>Settings</span>
+                    </a></li>
+            </ul>
+            <!-- 下方登入者 -->
+            <div class="nameCard pl-8 pb-8">
+                <img class="circleImg mr-4"
+                    src="https://github.com/hexschool/webLayoutTraining1st/blob/master/week5/andychen.jpeg?raw=true"
+                    alt="">
+                <ul>
+                    <li class="nameCard-name">Andy Chen</li>
+                    <li class="nameCard-email">andy0401@mail.com</li>
+                </ul>
+            </div>
+        </nav>
+        <!-- 左邊區塊 -->
+        <main class="main p-8">
+            <!-- 左邊表格內容 -->
+            <!-- 最上方主title -->
+            <header class="header">
+                <div class="mainTitle d-flex">
+                    <h2 class="mainTitle-Title mr-9">Admin</h2>
+                    <a href="#" class="commonA" data-toggle="modal" data-target="#openMe">
+                        <span class="material-icons align-text-top mr-2 colorPrimaryDark">
+                            add
+                        </span>
+                        Add New Admin</a>
+                </div>
+                <div class="tipIcon">
+                    <a href="#"><span class="material-icons">
+                            search
+                        </span></a>
+                    <a href="#" class="ml-6"><span class="material-icons">
+                            notifications_active
+                        </span> </a>
+                </div>
+            </header>
+            <!-- 表格內容 -->
+            <div class="">
+                <table class="table mt-10">
+                    <thead>
+                        <tr>
+                            <th scope="col">ID
+                                <a href="#" class="commonA d-inline">
+                                    <span class="material-icons align-text-top">
+                                        arrow_downward
+                                    </span></a></th>
+                            <th scope="col">Name</th>
+                            <th scope="col">Email</th>
+                            <th scope="col">Verified</th>
+                            <th scope="col"></th>
+                            <th scope="col"></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">#1</th>
+                            <td>Emir Wicks</td>
+                            <td>emir.wicks@mail.com</td>
+                            <td>Yes</td>
+                            <td>
+                                <a href="#" class="commonA"><span class="material-icons">
+                                        remove_red_eye
+                                    </span></a>
+                            </td>
+                            <td>
+                                <a href="#" class="commonA"><span class="material-icons">
+                                        edit
+                                    </span></a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">#2</th>
+                            <td>Zaina Goldsmith</td>
+                            <td>zaina.goldsmith@mail.com</td>
+                            <td>Yes</td>
+                            <td>
+                                <a href="#" class="commonA"><span class="material-icons">
+                                        remove_red_eye
+                                    </span></a>
+                            </td>
+                            <td>
+                                <a href="#" class="commonA"><span class="material-icons">
+                                        edit
+                                    </span></a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">#3</th>
+                            <td> Mahima Lopez</td>
+                            <td> Mahima.Lopez@mail.com</td>
+                            <td>Yes</td>
+                            <td>
+                                <a href="#" class="commonA"><span class="material-icons">
+                                        remove_red_eye
+                                    </span></a>
+                            </td>
+                            <td>
+                                <a href="#" class="commonA"><span class="material-icons">
+                                        edit
+                                    </span></a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">#4</th>
+                            <td> Pharrell Murray</td>
+                            <td> Pharrell.Murray@mail.com</td>
+                            <td>Yes</td>
+                            <td>
+                                <a href="#" class="commonA"><span class="material-icons">
+                                        remove_red_eye
+                                    </span></a>
+                            </td>
+                            <td>
+                                <a href="#" class="commonA"><span class="material-icons">
+                                        edit
+                                    </span></a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">#5</th>
+                            <td> Annika Mcbride</td>
+                            <td> Annika.Mcbride@mail.com</td>
+                            <td>Yes</td>
+                            <td>
+                                <a href="#" class="commonA"><span class="material-icons">
+                                        remove_red_eye
+                                    </span></a>
+                            </td>
+                            <td>
+                                <a href="#" class="commonA"><span class="material-icons">
+                                        edit
+                                    </span></a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">#6</th>
+                            <td> Fatimah Clark</td>
+                            <td> Fatimah.Clark@mail.com</td>
+                            <td>Yes</td>
+                            <td>
+                                <a href="#" class="commonA"><span class="material-icons">
+                                        remove_red_eye
+                                    </span></a>
+                            </td>
+                            <td>
+                                <a href="#" class="commonA"><span class="material-icons">
+                                        edit
+                                    </span></a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">#7</th>
+                            <td> Klaudia Rhodes</td>
+                            <td> Klaudia.Rhodes@mail.com</td>
+                            <td>Yes</td>
+                            <td>
+                                <a href="#" class="commonA"><span class="material-icons">
+                                        remove_red_eye
+                                    </span></a>
+                            </td>
+                            <td>
+                                <a href="#" class="commonA"><span class="material-icons">
+                                        edit
+                                    </span></a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">#8</th>
+                            <td> Tillie Lucero</td>
+                            <td> Tillie.Lucero@mail.com</td>
+                            <td>Yes</td>
+                            <td>
+                                <a href="#" class="commonA"><span class="material-icons">
+                                        remove_red_eye
+                                    </span></a>
+                            </td>
+                            <td>
+                                <a href="#" class="commonA"><span class="material-icons">
+                                        edit
+                                    </span></a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">#9</th>
+                            <td> Sabrina Stephenson</td>
+                            <td> Sabrina.Stephenson@mail.com</td>
+                            <td>Yes</td>
+                            <td>
+                                <a href="#" class="commonA"><span class="material-icons">
+                                        remove_red_eye
+                                    </span></a>
+                            </td>
+                            <td>
+                                <a href="#" class="commonA"><span class="material-icons">
+                                        edit
+                                    </span></a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">#10</th>
+                            <td> Annie Smith</td>
+                            <td> Annie.Smith@mail.com</td>
+                            <td>Yes</td>
+                            <td>
+                                <a href="#" class="commonA"><span class="material-icons">
+                                        remove_red_eye
+                                    </span></a>
+                            </td>
+                            <td>
+                                <a href="#" class="commonA"><span class="material-icons">
+                                        edit
+                                    </span></a>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <!-- 分頁Pagination -->
+                <nav aria-label="Page navigation">
+                    <ul class="pagination">
+                        <li class="page-item">
+                            <a class="page-link" href="#" aria-label="Previous">
+                                <span class="material-icons">
+                                    chevron_left
+                                </span>
+                            </a>
+                        </li>
+                        <li class="page-item"><a class="page-link" href="#">1</a></li>
+                        <li class="page-item"><a class="page-link" href="#">2</a></li>
+                        <li class="page-item"><a class="page-link" href="#">3</a></li>
+                        <li class="page-item">
+                            <a class="page-link" href="#" aria-label="Next">
+                                <span class="material-icons">
+                                    chevron_right
+                                </span>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+
+                <!-- Modal -->
+                <div class="modal fade" id="openMe" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title mainTitle-Title" id="exampleModalLabel">New Admin</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <h3 class="h3font fontWeightBold">Account</h3>
+                                <form>
+                                    <div class="form-group">
+                                        <label for="name" class="col-form-label font-size-md">Name</label>
+                                        <input type="text" class="form-control" id="name">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="email" class="col-form-label font-size-md">Email</label>
+                                        <input type="email" class="form-control" id="email">
+                                    </div>
+                                    <hr class="hrStyle">
+
+                                    <div></div>
+                                        <h3 class="h3font fontWeightBold">Verification</h3>
+                                        <p class="m-y-4">
+                                            <span class="material-icons colorWaring align-text-top">
+                                                warning
+                                            </span>
+                                            unverified</p>
+                                        <a href="#" class="btn btnThird widthFull">Send Verification Mail</a>                                    
+                                    <hr class="hrStyle">
+                                    <!-- 下拉level區 -->
+                                    <div class="form-group">
+                                        <div class="form-group">
+                                            <label for="address" class="h3font fontWeightBold col-form-label">Access
+                                                Level</label>
+                                            <select class="form-control" id="address">
+                                                <option class="font-size-md">-Choose access level-</option>
+                                                <option>Level-1</option>
+                                                <option>Level-2</option>
+                                                <option>Level-3</option>
+                                                <option>Level-4</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btnOutlinePrimary" data-dismiss="modal">Cancel</button>
+                                <button type="button" class="btn btnPrimary">Add</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+
+
+
+
+
+
+    <!-- bs js -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
+        integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
+        integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous">
+    </script>
+    <!-- 自己的js -->
+    <!-- <script src="./assets/js/vendors.js"></script> -->
+    <script src="./assets/js/all.js"></script>
+</body>
+
+</html>
